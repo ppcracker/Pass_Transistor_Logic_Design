@@ -1,90 +1,21 @@
-#Pass Transistor Project
-This project is a Pass Transistor implementation and simulation using LTspice.
+MIT License
 
-It includes:
+Copyright (c) 2025 [Deepika_Yadav]
 
-Schematic file (Pass_Transistor.asc)
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights  
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell  
+copies of the Software, and to permit persons to whom the Software is  
+furnished to do so, subject to the following conditions:
 
-Netlist file (Pass_Transistor.net)
+The above copyright notice and this permission notice shall be included in  
+all copies or substantial portions of the Software.
 
-Simulation setup
-
-README and License files
-
-Project Description
-A Pass Transistor is a basic MOSFET-based switch used in digital logic design.
-In this project, a PMOS transistor is used to realize a pass gate mechanism.
-
-This simulation demonstrates the behavior of a pass transistor under different input conditions, verifying its switching characteristics using LTspice XVII.
-
-Files Included
-Pass_Transistor.asc — Schematic file for LTspice
-
-Pass_Transistor.net — Auto-generated netlist from LTspice
-
-README.md — Documentation
-
-LICENSE — Open source under MIT License
-
-How to Run the Simulation
-Open LTspice XVII (or newer).
-
-Open Pass_Transistor.asc schematic file.
-
-(Optional) Regenerate the netlist if needed:
-
-Click on Netlist > Create Netlist.
-
-Run the simulation by clicking the Run button (running man icon).
-
-Probe waveforms by clicking on nodes or nets.
-
-How to Generate Netlist in LTspice
-Open your .asc schematic file.
-
-Go to the top menu: View ➔ SPICE Netlist.
-
-Save it manually if you want, or simulate once — LTspice auto-generates the .net file.
-
-Choosing W/L Ratio for PMOS
-Typically, for CMOS design, PMOS is made wider than NMOS to balance drive strengths.
-
-Common thumb rule:
-
-𝑊
-𝐿
-𝑃
-𝑀
-𝑂
-𝑆
-≈
-2
-×
-𝑊
-𝐿
-𝑁
-𝑀
-𝑂
-𝑆
-L
-W
-​
-  
-PMOS
-​
- ≈2× 
-L
-W
-​
-  
-NMOS
-​
- 
-If your NMOS is, say, W/L = 1 μm/0.18 μm →
-Then for PMOS: W/L ≈ 2 μm/0.18 μm.
-
-Exact W/L depends on:
-
-Technology node (e.g., 180 nm, 90 nm, etc.)
-
-Required performance (speed, leakage, power)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR  
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,  
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE  
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER  
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,  
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN  
+THE SOFTWARE.
